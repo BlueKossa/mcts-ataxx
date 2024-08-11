@@ -616,18 +616,6 @@ void uai_handler() {
     }
 }
 
-
-void test() {
-    char tst[] = "position\n";
-    tst[strcspn(tst, "\n")] = 0;
-    char* tok = strtok(tst, " ");
-
-    printf("%s\n", tok);
-    if (strcmp(tok, "position") == 0) {
-        printf("position!!\n");
-    }
-}
-
 int main() {
     uai_handler();
     return 0;
